@@ -1,0 +1,57 @@
+﻿@page "{id}"
+@model Practies_Test2.Pages.Admin.FoodPrograms.EditFoodModel
+@using Practies.Core.Convertors
+@{
+}
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">ویرایش غذا</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<div class="row">
+    <form method="post">
+        <input type="hidden" asp-for="EditFoodViewModel.FoodId" />
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    اطلاعات غذا
+                </div>
+
+                <div class="panel panel-body">
+                    <div class="form-group has-success">
+                        <label class="control-label" for="inputSuccess">نام غذا</label>
+                        <input type="text" asp-for="EditFoodViewModel.FoodName" class="form-control">
+                    </div>
+                    <div class="form-group has-success">
+                        <label class="control-label" for="inputSuccess">قیمت غذا</label>
+                        <input type="number" asp-for="EditFoodViewModel.Amount" class="form-control" >
+                    </div>
+                    <div class="form-group has-success">
+                        <label class="control-label" for="inputSuccess">تعداد غذا</label>
+                        <input type="number" asp-for="EditFoodViewModel.FoodCount" class="form-control" >
+                    </div>
+                    <div class="form-group has-success">
+                        <label class="control-label" for="inputSuccess">تاریخ سرو</label>
+                        <input type="datetime" value="@Model.EditFoodViewModel.dateTime.ToShamsi()"  asp-for="EditFoodViewModel.dateTime" class="form-control">
+                    </div>
+
+                    <input type="submit" value="ویرایش اطلاعات" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+@section Scripts{
+    <script>
+        $('#EditFoodViewModel_dateTime').datepicker({
+            showWeek: true,
+            dateFormat: 'mm/dd/yy'
+        });
+    </script>
+}
+

@@ -1,0 +1,57 @@
+﻿@model Practies.Core.DTOs.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">عضویت در سایت</a></li>
+            <li class="breadcrumb-item active" aria-current="page">عضویت در سایت</li>
+        </ul>
+    </nav>
+</div>
+
+
+<main class="client-page">
+    <div class="container-content">
+
+        <header><h2>عضویت در سایت </h2></header>
+
+        <div class="form-layer">
+
+            <form asp-action="Register" method="post">
+
+                <div class="input-group">
+                    <span class="input-group-addon" id="username"><i class="zmdi zmdi-account"></i></span>
+                    <input type="text" asp-for="UserName" class="form-control" placeholder="نام و نام خانوادگی" aria-describedby="username">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-addon" id="email-address"><i class="zmdi zmdi-email"></i></span>
+                    <input type="text" asp-for="Email" class="form-control" placeholder="ایمیل" aria-describedby="email-address">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-addon" id="password"><i class="zmdi zmdi-lock"></i></span>
+                    <input type="password" asp-for="Password" class="form-control" placeholder="رمز ورود " aria-describedby="password">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-addon" id="password"><i class="zmdi zmdi-lock"></i></span>
+                    <input type="password" asp-for="RePassword" class="form-control" placeholder="تکرار رمز ورود " aria-describedby="password">
+                </div>
+                <div class="text-danger" asp-validation-summary="All">
+
+                </div>
+
+                <button class="btn btn-success"> ورود به سایت </button>
+
+            </form>
+        </div>
+
+    </div>
+</main>
+

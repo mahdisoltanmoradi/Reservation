@@ -1,0 +1,36 @@
+﻿@page "{id}"
+@using Practies.Core.Convertors
+@model Practies_Test2.Pages.Admin.FoodPrograms.DeleteFoodModel
+@{
+}
+
+<div class="col-md-12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            حذف غذا
+        </div>
+        <div class="panel-body">
+
+            <form method="post">
+                <input type="hidden" name="FoodId" value="@ViewData["FoodId"].ToString()" />
+
+                <dl class="dl-horizontal">
+                    <dt>نام غذا :</dt>
+                    <dd>@Model.informationFoodViewModel.FoodName</dd>
+                    <dt>مبلغ غدا :</dt>
+                    <dd>@Model.informationFoodViewModel.Amount</dd>
+                    <dt>تاریخ سرو غدا:</dt>
+                    <dd>@Model.informationFoodViewModel.dateTime.ToShamsi()</dd>
+                    <dt>تعداد غدا :</dt>
+                    <dd>@Model.informationFoodViewModel.FoodCount</dd>
+                    <dt></dt>
+                    <dd>
+                        <input type="submit" class="btn btn-danger" value="حذف" />
+                    </dd>
+                </dl>
+            </form>
+        </div>
+        <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+</div>

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.14" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Practies.Core\Practies.Core.csproj" />
+    <ProjectReference Include="..\Practies.DataLayer\Practies.DataLayer.csproj" />
+  </ItemGroup>
+
+</Project>

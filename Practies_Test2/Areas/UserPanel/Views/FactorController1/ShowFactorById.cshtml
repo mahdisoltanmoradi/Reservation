@@ -1,0 +1,35 @@
+﻿@model Practies.DataLayer.Entities.FoodPrograms.Factor
+@using Practies.Core.Convertors
+@{
+    ViewData["Title"] = "ShowFactorById";
+}
+
+<div class="col-md-12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            سفارش غذا
+        </div>
+        <div class="panel-body">
+
+            <form >
+                <dl class="dl-horizontal">
+                    <dt>نام غذا :</dt>
+                     <dd>@Model.User.UserName</dd>
+                    <dt>ایمیل کاربر :</dt>
+                    <dd>@Model.User.Email</dd>
+                    <dt>نام غذا :</dt>
+                    <dd>@Model.Food.FoodName</dd>
+                    <dt>مبلغ غدا :</dt>
+                    <dd>@Model.SumPrice</dd>
+                    <dt>تاریخ سرو غدا:</dt>
+                    <dd>@Model.Food.CreateDate.ToShamsi()</dd>
+                    <dt></dt>
+                </dl>
+            </form>
+        </div>
+        <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+</div>
+
+

@@ -1,0 +1,67 @@
+﻿@page
+@using Practies.Core.Convertors
+@model Practies_Test2.Pages.Admin.FoodPrograms.CreateFoodModel
+@{
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">افزودن غذا</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<div class="row">
+    <form method="post" enctype="multipart/form-data">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    افزودن غذا
+                </div>
+
+                <div class="panel panel-body">
+                    <div class="form-group has-success">
+                        <label class="control-label" for="inputSuccess">نام غذا</label>
+                        <input type="text" asp-for="Food.FoodName" class="form-control">
+                    </div>
+                    <div class="form-group has-success">
+                        <label class="control-label" for="inputSuccess">تعداد غذا</label>
+                        <input type="number" asp-for="Food.Count" class="form-control">
+                    </div>
+                    <div class="form-group has-success">
+                        <label class="control-label" for="inputSuccess">قیمت غذا</label>
+                        <input type="number" asp-for="Food.Price" class="form-control">
+                    </div>
+                    <div class="form-group has-success">
+                        <label class="control-label" for="inputSuccess">تاریخ سرو</label>
+                        <input type="datetime" asp-for="Food.CreateDate" class="form-control">
+                    </div>
+
+
+                    <input type="submit" value="ذخیره اطلاعات" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    تصویر کاربر
+                </div>
+
+
+            </div>
+
+        </div>
+    </form>
+
+</div>
+
+
+@section Scripts{
+    <script>
+        $('#Food_CreateDate').datepicker({
+            showWeek: true,
+            dateFormat: 'mm/dd/yy'
+        });
+    </script>
+}

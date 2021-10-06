@@ -1,0 +1,4 @@
+C:\Users\Mahdi\OneDrive\Desktop\core تمرین\Practies_Test2\WebFramework\obj\Debug\netstandard2.1\WebFramework.csprojAssemblyReference.cache
+C:\Users\Mahdi\OneDrive\Desktop\core تمرین\Practies_Test2\WebFramework\obj\Debug\netstandard2.1\WebFramework.AssemblyInfoInputs.cache
+C:\Users\Mahdi\OneDrive\Desktop\core تمرین\Practies_Test2\WebFramework\obj\Debug\netstandard2.1\WebFramework.AssemblyInfo.cs
+C:\Users\Mahdi\OneDrive\Desktop\core تمرین\Practies_Test2\WebFramework\obj\Debug\netstandard2.1\WebFramework.csproj.CoreCompileInputs.cache

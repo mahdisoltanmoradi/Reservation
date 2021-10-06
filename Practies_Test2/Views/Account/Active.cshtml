@@ -1,0 +1,19 @@
+﻿@model Practies.DataLayer.Entities.Users.User
+@{
+    ViewData["Title"] = "Active";
+}
+
+<div style="direction:rtl; padding:20px ">
+    <h2>@Model.UserName عزیز !</h2>
+    <p>
+      ثبت نام شما با موفقیت انجام شد
+    </p>
+    <p>جهت فعال سازی حساب کاربریتان روی لینک زیر کیلیک کنید</p>
+    <div >
+        <p>
+            <a href="http://localhost:6616/Account/ActiveAccount/@Model.ActiveCode">فعال سازی حساب کاربری </a>
+        </p>
+    </div>
+</div>
+
+
